@@ -26,14 +26,14 @@ export default function ImagePreview({
           />
         )}
 
-        {/* {isProcessing && (
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        {isProcessing && (
+          <div className="absolute inset-0 bg-transparent bg-opacity-50 flex items-center justify-center">
             <div className="flex flex-col items-center text-white">
               <LoaderIcon className="animate-spin h-8 w-8 mb-2" />
-              <div>Processing...</div>
+              {/* <div>Processing...</div> */}
             </div>
           </div>
-        )} */}
+        )}
       </div>
     </div>
   );
