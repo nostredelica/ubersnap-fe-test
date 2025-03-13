@@ -4,13 +4,14 @@ import type React from "react";
 
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
+import { FilterType } from "@/lib/image-processor";
 import { LoaderIcon, Upload } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 
 interface ImageUploaderProps {
   setImage: (image: string | null) => void;
-  setFilter: React.Dispatch<React.SetStateAction<string>>;
+  setFilter: React.Dispatch<React.SetStateAction<FilterType>>;
 }
 
 export default function ImageUploader({
